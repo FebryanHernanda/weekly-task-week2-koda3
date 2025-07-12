@@ -1,0 +1,25 @@
+{
+  "name": "weekly-task-week2-koda3",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Weekly task 2 for Kodacamp 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "lint": "eslint .",
+    "lint:fix": "lint --fix"
+  },
+  "keywords": [
+    "weeklytask",
+    "koda"
+  ],
+  "author": "Febryan Hernanda Mashudi",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/json": "^0.13.0",
+    "@stylistic/eslint-plugin": "^5.1.0",
+    "eslint": "^9.31.0",
+    "globals": "^16.3.0"
+  }
+}
