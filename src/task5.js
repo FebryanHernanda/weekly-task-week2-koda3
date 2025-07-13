@@ -153,8 +153,10 @@ const updateContent = async () => {
   const file = path.join(`${fileName}.${fileType}`); // combine file name and type
   const filePath = path.join(__dirname, "data", `${file}`); // combine file path
 
+  const oldContent = await fs.readFile(filePath, "utf8"); // read old content
+  const newContent = oldContent + "\n" + fileContent; // combine new content with old content
   try {
-    await fs.writeFile(filePath, fileContent, "utf8"); // overwrite old file with updated file
+    await fs.writeFile(filePath, newContent, "utf8"); // overwrite old file with updated file
     console.log("Update content successfully!");
   } catch (err) {
     if (err.code === "ENOENT") {
