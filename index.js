@@ -4,7 +4,7 @@
  uncomments on the function you want to use
 */
 
-console.log("=====OUTPUT=====");
+console.log("========OUTPUT========");
 
 /* Task 1 */
 // import { getDataAsync, getDataTC, thenCatch } from "./src/task1.js";
