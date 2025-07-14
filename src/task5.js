@@ -4,8 +4,8 @@ import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "node:url";
 import { dirname } from "node:path";
-import * as readline from "node:readline/promises";
 /* readline module */
+import * as readline from "node:readline/promises";
 import { stdin as input, stdout as output } from "node:process";
 
 /* Declare readline interface */
@@ -76,7 +76,7 @@ const readFolder = async () => {
     if (err.code === "ENOENT") {
       console.log("File does not exists");
     } else {
-      console.error("Error reading files:", err);
+      console.error("Error reading folders:", err);
     }
   }
 };
